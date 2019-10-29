@@ -1,0 +1,78 @@
+
+
+  body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    background-image: url(pics/marble-1529415_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .clock {
+    width: 30rem;
+    height: 30rem;
+    border: 35px solid rgba(217, 208, 232, 0.5);
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+      0 0 10px rgba(46,40,54,0.2),
+      inset 0 0 10px #2e2836,
+      0 0 10px rgba(46,40,54.8);
+  }
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+  }
+
+  .hand {
+    width: 50%;
+    height: 8px;
+    background: #2e2836;
+    position: absolute;
+    top: 50%;
+    border-radius: 50% 10% 10% 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  .second-hand{
+    width: 50%;
+    height: 4px;
+    background: #2e2836;
+    position: absolute;
+    top: 50%;
+    border-radius: 50% 10% 10% 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  .hour-hand{
+    width: 50%;
+    height: 10px;
+    background: #2e2836;
+    position: absolute;
+    top: 50%;
+    border-radius: 80% 10% 10% 80%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); 
+  }
+  .middle{
+    width: 2rem;
+    height: 2rem;
+    top: 47%;
+    left: 46.8%;    
+    display: block;
+    background: #2e2836;
+    position: relative;
+    border-radius: 50%;
+
+  }
